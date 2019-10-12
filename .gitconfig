@@ -144,6 +144,8 @@
 
 	# Detect copies as well as renames
 	renames = copies
+	# Remove the a/ and b/ in diff filenames
+	noprefix = true
 
 [diff "bin"]
 
