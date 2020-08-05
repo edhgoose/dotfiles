@@ -152,3 +152,6 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 alias tf='terraform'
+
+alias s='cd ~/DevelopmentEnvironment; vagrant ssh'
+alias b="cd ~/DevelopmentEnvironment; vagrant ssh -- -t \"-c 'mm-docker bash'\""
