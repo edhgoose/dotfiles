@@ -155,3 +155,5 @@ alias tf='terraform'
 
 alias s='cd ~/DevelopmentEnvironment; vagrant ssh'
 alias b="cd ~/DevelopmentEnvironment; vagrant ssh -- -t \"-c 'mm-docker bash'\""
+
+alias curltime="curl -w \"@$HOME/.curl-format.txt\" -o NUL -s "
