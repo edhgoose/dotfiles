@@ -15,6 +15,7 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
 alias gp="git push -u origin HEAD"
+alias gbs="git branch --sort=-committerdate"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -155,5 +156,7 @@ alias tf='terraform'
 
 alias s='cd ~/DevelopmentEnvironment; vagrant ssh'
 alias b="cd ~/DevelopmentEnvironment; vagrant ssh -- -t \"-c 'mm-docker bash'\""
+
+alias xar="echo -e 'Here is an example xargs command:\nRemove -p or answer y to each prompt to have it run.\n% is the argument and will be replaced.\nfind . -name \"<condition>\" | xargs -p -I % sh -c \"<command> % <more bits of command>\"'"
 
 alias curltime="curl -w \"@$HOME/.curl-format.txt\" -o NUL -s "
