@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+source ~/Infrastructure/useful-scripts/ec2.sh
+source ~/Infrastructure/useful-scripts/ecs.sh
+
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$_";
