@@ -150,6 +150,9 @@
 	# Remove the a/ and b/ in diff filenames
 	noprefix = true
 
+    algorithm = histogram
+    colorMoved = plain
+
 [diff "bin"]
 
 	# Use `hexdump` to diff binary files
@@ -169,6 +172,7 @@
 
 	# https://git-scm.com/docs/git-config#git-config-pushdefault
 	default = simple
+	autoSetupRemote = true
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
 
@@ -197,3 +201,27 @@
 [init]
 
 	templateDir = ~/.config/git/template/
+
+    defaultBranch = main
+
+[user]
+	email = ed@mention-me.com
+	signingkey = E8310990A1CDDA5123F2DB414562AB96126BEB12
+
+[pull]
+	rebase = false
+
+[branch]
+    sort = -committerdate
+
+[tag]
+    sort = version:refname
+
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
+
+[rerere]
+	enabled = true
+	autoUpdate = true
